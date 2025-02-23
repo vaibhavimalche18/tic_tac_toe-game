@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #A8DCD9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Game Container */
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5vmin;
+    width: 60vmin;
+    height: 60vmin;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+/* Box Styling */
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    background-color: #EEDAE6;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #60435F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Buttons Styling */
+#reset, #new {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #110211;
+    border-radius: 0.8rem;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+/* Make New Game Button Smaller */
+#new {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+}
+
+/* Message Display */
+#msg {
+    font-size: 2rem;
+    color: #020219;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Hide Message Initially */
+.hide {
+    display: none;
+}
